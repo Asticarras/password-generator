@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="glow glow-left"></div>
+    <div class="glow glow-right"></div>
+    <div class="card">
+
+<div class="title-row">
+
+    <img
+        src="shield.svg"
+        alt="Shield"
+        class="shield-icon"
+    >
+    <h1>PASSWORD</h1>
+
+</div>
+
+    <p class="subtitle">Generator</p>
+
+    <div class="password-row">
+
+        <input
+            type="password"
+            id="password"
+            value=""
+            placeholder="Generate a secure password"
+        >
+
+    <button class="show-btn">
+        👁
+    </button>
+
+        <button class="copy-btn">
+            Copy
+        </button>
+
+    </div>
+
+<div class="strength">
+
+    <p id="strength-text">Click Generate</p>
+
+    <div class="bars">
+
+        <span id="bar1"></span>
+        <span id="bar2"></span>
+        <span id="bar3"></span>
+        <span id="bar4"></span>
+
+    </div>
+
+    <p id="copy-message"></p>
+
+</div>
+
+<button id="filter-btn">
+    ⚙ Filter
+</button>
+
+<div id="filter-menu">
+
+    <div class="filter-grid">
+
+        <label>
+            <input type="checkbox" id="uppercase" checked>
+            Uppercase Letters
+        </label>
+
+        <label>
+            <input type="checkbox" id="numbers" checked>
+            Numbers
+        </label>
+
+        <label>
+            <input type="checkbox" id="lowercase" checked>
+            Lowercase Letters
+        </label>
+
+        <label>
+            <input type="checkbox" id="special" checked>
+            Special Characters
+        </label>
+
+    </div>
+
+</div>
+
+<div class="length-container">
+
+    <label>
+        Password Length:
+        <span id="length-value">14</span>
+    </label>
+
+    <input
+        type="range"
+        id="length-slider"
+        min="6"
+        max="32"
+        value="14"
+    >
+
+</div>
+
+<button id="generate-btn">
+    Generate Password
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
